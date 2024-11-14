@@ -20,7 +20,7 @@ class Layout:
         self.slider_marks = {
             i: mark
             for i, mark in enumerate(
-                ["1 day", "1 week", "1 month", "3 months", "1 year", "5 year", "Max"]
+                ["1 day", "1 week", "3 months", "1 year", "5 year", "Max"]
             )
         }
 
@@ -98,7 +98,7 @@ class Layout:
                                 dcc.Slider(
                                     id="time-slider",
                                     min=0,
-                                    max=6,
+                                    max=5,
                                     step=None,
                                     value=2,
                                     marks=self.slider_marks,
@@ -147,8 +147,8 @@ class Layout:
                         ),
                         html.Footer(
                             [
-                                html.H3("Stock viewer 2021", className="h6"),
-                                html.P("Dashboard av Kokchun Giang"),
+                                html.H3("Stock viewer 2024", className="h6"),
+                                html.P("Dashboard av Raphael"),
                             ],
                             className="navbar fixed-bottom",
                         ),
